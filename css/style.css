@@ -1731,7 +1731,7 @@ img {
     border-radius: 20px;
     margin-left: 10px;
     transition: all 0.3s ease;
-    cursor: default;
+    cursor: pointer;
 }
 
 .weather-widget:hover {
