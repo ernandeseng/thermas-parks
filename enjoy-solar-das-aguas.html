@@ -1,0 +1,805 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enjoy Solar das Águas Park Resort - Guia Tour Thermas Parks</title>
+    <!-- Stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .details-header {
+            background-image: url('https://i.imgur.com/MZ6uX4E.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        .details-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .details-header .container {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .details-header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .content-section {
+            padding: 40px 0;
+        }
+
+        .content-section p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        .content-section h2 {
+            color: #1B3B6F;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            border-left: 5px solid #F58634;
+            padding-left: 15px;
+        }
+
+        .content-section h3 {
+            color: #333;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .amenities-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .amenities-list li {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            color: #444;
+        }
+
+        .amenities-list li i {
+            color: #25D366;
+            margin-right: 10px;
+        }
+
+        .highlight-box {
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 5px solid #25D366;
+        }
+
+        .whatsapp-btn-large {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .whatsapp-btn-large:hover {
+            background-color: #1ea952;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+        }
+    
+    /* Layout Sidebar & New Form */
+    .accommodation-layout {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    .accommodation-content {
+        flex: 1;
+        min-width: 0; /* Prevent overflow */
+    }
+
+    .accommodation-sidebar {
+        width: 350px;
+        flex-shrink: 0;
+    }
+
+    @media (max-width: 991px) {
+        .accommodation-sidebar {
+            width: 100%;
+            margin-top: 30px;
+        }
+    }
+
+    /* Sticky Form */
+    .booking-form-wrapper {
+        background-color: #333;
+        padding: 20px;
+        border-radius: 5px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        position: sticky;
+        top: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .form-header {
+        background-color: #2c5282;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin: -20px -20px 20px -20px;
+        border-radius: 5px 5px 0 0;
+        border-bottom: 2px solid #ed8936;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: #fff;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 5px;
+        font-family: inherit;
+        box-sizing: border-box;
+    }
+
+    .submit-btn {
+        width: 100%;
+        background-color: #ed8936;
+        color: white;
+        border: none;
+        padding: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        font-size: 1rem;
+        transition: background 0.3s;
+    }
+
+    .submit-btn:hover {
+        background-color: #dd6b20;
+    }
+    
+    .radio-group label {
+        font-weight: normal; 
+        margin: 0; 
+        display: flex; 
+        align-items: center; 
+        gap: 8px;
+        cursor: pointer;
+    }
+
+</style>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit;"><img src="assets/logo.jpg" alt="Logo"> <span style="font-weight: bold; font-size: 0.9rem; text-transform: uppercase; color: #333;">GUIA TOUR THERMAS PARKS</span></a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="resorts.html">RESORTS</a></li>
+                    <li class="btn-highlight"><a href="https://wa.me/5517997858264" target="_blank">RESERVAR AGORA</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="details-header">
+        <div class="container">
+            <h1>Solar das Águas Park Resort</h1>
+            <p>Diversão e muita comodidade para toda a família</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="content-section">
+        <div class="container">
+            <div class="accommodation-layout">
+                <div class="accommodation-content">
+                    
+
+            <!-- Galeria de Imagens -->
+            <div class="accommodation-gallery">
+                <h3>Galeria de Fotos</h3>
+                <div class="gallery-master-detail">
+                    <div class="gallery-main-display" style="position: relative;">
+                        <button class="nav-arrow left-arrow" onclick="prevImage()">&#10094;</button>
+                        <img id="main-image" src="https://i.ibb.co/k6kGPbMk/thumb-galeria-1.jpg"
+                            alt="Solar das Águas Park Resort Principal">
+                        <button class="nav-arrow right-arrow" onclick="nextImage()">&#10095;</button>
+                    </div>
+                    <div class="gallery-thumbnail-strip">
+                        <!-- Thumbnails -->
+                        <img src="https://i.ibb.co/k6kGPbMk/thumb-galeria-1.jpg" class="gallery-thumb active"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/hRKqkb38/thumb-galeria-2.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/PGMhTqP5/thumb-galeria-3.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/gMjS9TG1/thumb-galeria-4.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/8vgRrPM/thumb-galeria-5.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/0xbDXcM/thumb-galeria-6.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/VpvDYf9r/thumb-galeria-7.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/BkFWL51/thumb-galeria-8.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/wZKS8FrG/thumb-galeria-9.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/RTM6ZsdK/thumb-galeria-10.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/x8gKC5C9/thumb-galeria-11.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/WpyrWp1m/thumb-galeria-12.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/JFzD46qZ/thumb-galeria-13.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/JW8h1HCB/thumb-galeria-14.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/sJzX2Lgm/thumb-galeria-15.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/99V7p6SW/thumb-galeria-16.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/bjVwtPtR/thumb-galeria-17.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/Tq0tx877/thumb-galeria-18.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/zWB4Mnwg/thumb-galeria-19.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/vC11mPSs/thumb-galeria-20.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/9mp37190/thumb-galeria-21.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/jvZmpnqK/thumb-galeria-22.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/BH3bHCLg/thumb-galeria-23.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/Q7zmJDtw/thumb-galeria-24.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/xtSszBCK/thumb-galeria-25.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/7J0tfDxy/thumb-galeria-26.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/hRr5v2Hr/thumb-galeria-27.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/nsFF0KtX/thumb-galeria-28.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/9knS9tNN/thumb-galeria-29.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/gZztbYPZ/thumb-galeria-30.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/1HX3qyZ/thumb-galeria-31.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/xZ3jGWj/thumb-galeria-32.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/chTdPSZK/thumb-galeria-33.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/6697VJx/thumb-galeria-34.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/LzQRCPS8/thumb-galeria-35.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/CpfbFH00/thumb-galeria-36.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/gZbmD8wp/thumb-galeria-37.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/rRcB9FPM/thumb-galeria-38.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/nMLTkWrf/thumb-galeria-39.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/fVhKfPbf/thumb-galeria-40.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/Fbr8Rt7j/thumb-galeria-41.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/Z47Wbzz/thumb-galeria-42.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/5gKtsbpR/thumb-galeria-43.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/yFLWG1XB/thumb-galeria-44.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/07QM0qz/thumb-galeria-45.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/nMChXWyz/thumb-galeria-46.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/v6422ffC/thumb-galeria-47.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/xqN5rJpX/thumb-galeria-48.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/mCkh66sd/thumb-galeria-49.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/rGwbsf6Y/thumb-galeria-50.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/k6kwYN9X/thumb-galeria-51.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/hkx96Fp/thumb-galeria-52.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                        <img src="https://i.ibb.co/N6QPnS9w/thumb-galeria.jpg" class="gallery-thumb"
+                            onclick="changeImage(this)">
+                    </div>
+                </div>
+
+                <style>
+                    /* Master Detail Gallery Styles */
+                    .gallery-master-detail {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        margin-bottom: 30px;
+                    }
+
+                    .gallery-main-display {
+                        width: 100%;
+                        height: 500px;
+                        /* Adjust height as needed */
+                        border-radius: 8px;
+                        overflow: hidden;
+                        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                        background-color: #f0f0f0;
+                        /* Placeholder color */
+                    }
+
+                    .gallery-main-display img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: opacity 0.3s ease;
+                    }
+
+                    .gallery-thumbnail-strip {
+                        display: flex;
+                        gap: 10px;
+                        overflow-x: auto;
+                        padding-bottom: 10px;
+                        /* For scrollbar space */
+                        scrollbar-width: thin;
+                        scrollbar-color: #F58634 #f0f0f0;
+                    }
+
+                    .gallery-thumbnail-strip::-webkit-scrollbar {
+                        height: 8px;
+                    }
+
+                    .gallery-thumbnail-strip::-webkit-scrollbar-track {
+                        background: #f0f0f0;
+                        border-radius: 4px;
+                    }
+
+                    .gallery-thumbnail-strip::-webkit-scrollbar-thumb {
+                        background-color: #F58634;
+                        border-radius: 4px;
+                    }
+
+                    .gallery-thumb {
+                        width: 120px;
+                        height: 80px;
+                        object-fit: cover;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        opacity: 0.6;
+                        transition: all 0.2s ease;
+                        border: 2px solid transparent;
+                        flex-shrink: 0;
+                    }
+
+                    .gallery-thumb:hover {
+                        opacity: 1;
+                    }
+
+                    .gallery-thumb.active {
+                        opacity: 1;
+                        border-color: #F58634;
+                        transform: scale(1.05);
+                    }
+
+                    .nav-arrow {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background-color: rgba(0, 0, 0, 0.5);
+                        color: white;
+                        font-size: 2rem;
+                        padding: 10px 20px;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        user-select: none;
+                        transition: background-color 0.3s ease;
+                        z-index: 10;
+                        border: none;
+                    }
+
+                    .nav-arrow:hover {
+                        background-color: rgba(0, 0, 0, 0.8);
+                    }
+
+                    .left-arrow {
+                        left: 10px;
+                    }
+
+                    .right-arrow {
+                        right: 10px;
+                    }
+                </style>
+
+                <script>
+                    let currentIndex = 0;
+
+                    function updateGallery(index) {
+                        const thumbs = document.querySelectorAll('.gallery-thumb');
+                        if (index < 0) index = thumbs.length - 1;
+                        if (index >= thumbs.length) index = 0;
+
+                        currentIndex = index;
+                        const thumb = thumbs[currentIndex];
+                        
+                        // Update Main Image
+                        const mainImage = document.getElementById('main-image');
+                        mainImage.style.opacity = '0'; // Fade out
+
+                        setTimeout(() => {
+                            mainImage.src = thumb.src;
+                            mainImage.style.opacity = '1'; // Fade in
+                        }, 200);
+
+                        // Update Active Thumb
+                        document.querySelectorAll('.gallery-thumb').forEach(t => t.classList.remove('active'));
+                        thumb.classList.add('active');
+                        
+                        // Scroll thumbnail into view
+                        thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                    }
+
+                    function changeImage(thumb) {
+                        const thumbs = document.querySelectorAll('.gallery-thumb');
+                        const index = Array.from(thumbs).indexOf(thumb);
+                        updateGallery(index);
+                    }
+
+                    function nextImage() {
+                        event && event.stopPropagation();
+                        updateGallery(currentIndex + 1);
+                    }
+
+                    function prevImage() {
+                        event && event.stopPropagation();
+                        updateGallery(currentIndex - 1);
+                    }
+                </script>
+            </div>
+
+            <p>Se você está procurando um lugar para ficar em Olímpia que une diversão e muita comodidade para toda a
+                família, apresentamos o Solar das Águas Park Resort. Atualmente o maior resort do estado de São Paulo,
+                com um total de 1000 apartamentos.</p>
+
+            <p>Aqui no Solar das Águas Park Resort você vai encontrar cômodos muito amplos, que acomodam de 5 a 7
+                pessoas. Nossos apartamentos possuem uma ampla sala de estar com sofá bicama, cozinha americana
+                equipada, banheiros com bancada externa e varanda.</p>
+
+            <p>Tudo feito para que você e sua família ou amigos se sintam em casa e possam desfrutar de uma estadia
+                muito agradável, relaxante e super confortável.</p>
+
+            <h2>Comodidades Principais</h2>
+            <ul class="amenities-list">
+                <li><i class="fas fa-check-circle"></i> Wi-fi Grátis</li>
+                <li><i class="fas fa-check-circle"></i> Piscinas</li>
+                <li><i class="fas fa-check-circle"></i> Café da manhã</li>
+                <li><i class="fas fa-check-circle"></i> Almoço e Jantar</li>
+                <li><i class="fas fa-check-circle"></i> Ar Condicionado</li>
+                <li><i class="fas fa-check-circle"></i> Academia</li>
+                <li><i class="fas fa-check-circle"></i> Frigobar</li>
+                <li><i class="fas fa-check-circle"></i> Cofre</li>
+                <li><i class="fas fa-check-circle"></i> Salão de Jogos</li>
+                <li><i class="fas fa-check-circle"></i> Restaurante</li>
+                <li><i class="fas fa-check-circle"></i> Estacionamento</li>
+                <li><i class="fas fa-check-circle"></i> Cinema</li>
+                <li><i class="fas fa-check-circle"></i> SPA e Massagem</li>
+                <li><i class="fas fa-check-circle"></i> Quadras Esportivas</li>
+                <li><i class="fas fa-check-circle"></i> Mini Golf</li>
+            </ul>
+
+            <h2>Acomodações</h2>
+            <p>Confira nossas opções de apartamentos:</p>
+
+            <h3>Suíte Luxo I (5 pessoas)</h3>
+            <ul class="amenities-list">
+                <li><i class="fas fa-circle" style="color: #F58634; font-size: 0.6rem;"></i> 1 quarto com 1 cama de
+                    casal e 1 cama de solteiro</li>
+                <li><i class="fas fa-circle" style="color: #F58634; font-size: 0.6rem;"></i> 1 sofá-cama na sala</li>
+                <li><i class="fas fa-circle" style="color: #F58634; font-size: 0.6rem;"></i> Cozinha americana e Varanda
+                </li>
+            </ul>
+
+            <h3>Suite Luxo II (7 pessoas)</h3>
+            <ul class="amenities-list">
+                <li><i class="fas fa-circle" style="color: #F58634; font-size: 0.6rem;"></i> 2 quartos</li>
+                <li><i class="fas fa-circle" style="color: #F58634; font-size: 0.6rem;"></i> 1 cama de casal, 1 cama de
+                    solteiro, 2 camas sobressalentes</li>
+                <li><i class="fas fa-circle" style="color: #F58634; font-size: 0.6rem;"></i> Sofá-cama na sala</li>
+                <li><i class="fas fa-circle" style="color: #F58634; font-size: 0.6rem;"></i> Cozinha americana e Varanda
+                </li>
+            </ul>
+
+            <h3>Suíte Superior (no térreo - 5 pessoas)</h3>
+            <ul class="amenities-list">
+                <li><i class="fas fa-circle" style="color: #F58634; font-size: 0.6rem;"></i> 1 quarto com 1 cama de
+                    casal e 1 cama de solteiro</li>
+                <li><i class="fas fa-circle" style="color: #F58634; font-size: 0.6rem;"></i> 1 sofá-cama na sala</li>
+                <li><i class="fas fa-circle" style="color: #F58634; font-size: 0.6rem;"></i> Cozinha americana e Varanda
+                </li>
+            </ul>
+
+            <h3>Suíte Master (no térreo - 7 pessoas)</h3>
+            <ul class="amenities-list">
+                <li><i class="fas fa-circle" style="color: #F58634; font-size: 0.6rem;"></i> 2 quartos</li>
+                <li><i class="fas fa-circle" style="color: #F58634; font-size: 0.6rem;"></i> 1 cama de casal, 2 camas de
+                    solteiro, 1 cama sobressalente</li>
+                <li><i class="fas fa-circle" style="color: #F58634; font-size: 0.6rem;"></i> 1 sofá-cama na sala</li>
+                <li><i class="fas fa-circle" style="color: #F58634; font-size: 0.6rem;"></i> Cozinha americana e Varanda
+                </li>
+            </ul>
+
+            <h2>Diferenciais e Lazer</h2>
+            <p>O Solar das Águas Park Resort é muito mais do que apenas um lugar para se hospedar. Aqui você encontra
+                diversão para as crianças e para os adultos, piscinas, áreas para lazer e diversão, espaço fitness, além
+                de um delicioso espaço gastronômico.</p>
+
+            <p>Temos brinquedos aquáticos e terrestres, além de sala de jogos e playground. Durante toda a sua estadia,
+                você pode contar com uma equipe de profissionais muito simpáticos e dispostos a servir apenas o melhor.
+            </p>
+
+                        
+
+                                    
+
+
+            <h2>Os Parques de Olímpia</h2>
+            <p>Olímpia recebe anualmente milhares de visitantes por ser conhecida pelos parques aquáticos: Thermas dos
+                Laranjais e Hot Beach Olímpia.</p>
+
+            <h3>O Hot Beach Olímpia</h3>
+            <p>Um parque moderno com 9 atrações, indicado para famílias que buscam tranquilidade. Possui piscina de
+                ondas, areia branquinha, mais de 600 coqueiros e sistema de consumo com pulseira magnética. Um
+                diferencial é que todos os hóspedes do complexo têm acesso livre ao parque.</p>
+
+            <h3>Thermas dos Laranjais</h3>
+            <p>O maior e mais visitado da América Latina, com mais de 54 atrações, desde relaxantes ofurôs até radicais
+                montanhas-russas aquáticas, Montanha Russa Aquática e Surf Master.</p>
+
+            <h2>Dicas Úteis</h2>
+            <p><strong>Outras Atrações:</strong> Vale dos Dinossauros, Museu de Cera Dreamland, Avenida Aurora Forti
+                Neves.</p>
+            <p><strong>Abastecimento:</strong> Aproveite o etanol com preço acessível na cidade.</p>
+            <p><strong>Emergências:</strong> Atendimento na UPA da cidade, com unidades exclusivas para planos Unimed e
+                HB Saúde. Farmácias 24h na avenida principal.</p>
+
+        
+                </div>
+                <div class="accommodation-sidebar">
+
+            <div class="booking-form-wrapper">
+                <div class="form-header">
+                    Solicite um Orçamento
+                </div>
+                <form onsubmit="sendToWhatsappNew(event, this)">
+                    <input type="hidden" name="hotel_name" value="">
+
+                    <div class="form-group">
+                        <label>Nome:</label>
+                        <input type="text" name="nome" class="form-control" placeholder="Nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>E-mail:</label>
+                        <input type="email" name="email" class="form-control" placeholder="E-mail">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Telefone:</label>
+                        <input type="tel" name="telefone" class="form-control" placeholder="Telefone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Cidade:</label>
+                        <input type="text" name="cidade" class="form-control" placeholder="Cidade">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Data de Chegada:</label>
+                        <input type="date" name="checkin" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Data de Saída:</label>
+                        <input type="date" name="checkout" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Adultos:</label>
+                        <input type="number" name="adultos" class="form-control" placeholder="2" min="1" value="2" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Crianças (7 a 12 anos):</label>
+                         <input type="number" name="criancas7_12" class="form-control" placeholder="0" min="0" value="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Crianças (0 a 6 anos):</label>
+                         <input type="number" name="criancas0_6" class="form-control" placeholder="0" min="0" value="0">
+                    </div>
+
+                    <div class="form-group">
+                         <label>Pensão:</label>
+                         <select name="pensao" class="form-control">
+                            <option value="Somente Café" selected>Somente Café</option>
+                            <option value="Café da Manhã">Café da Manhã</option>
+                            <option value="Meia Pensão">Meia Pensão</option>
+                            <option value="Pensão Completa">Pensão Completa</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Como prefiro ser contactado?</label>
+                        <div class="radio-group" style="display: flex; flex-direction: column; gap: 5px; font-size: 0.9rem;">
+                            <label><input type="radio" name="contato_pref" value="WhatsApp" checked> WhatsApp</label>
+                        </div>
+                    </div>
+
+                    
+
+                    <!-- Fake ReCaptcha -->
+                    <div style="background: #f9f9f9; border: 1px solid #d3d3d3; padding: 5px 10px; border-radius: 3px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; width: 100%; max-width: 250px; color: #000;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <input type="checkbox" style="width: 24px; height: 24px; cursor: pointer;">
+                            <span style="font-size: 14px; font-weight: 500;">I'm not a robot</span>
+                        </div>
+                        <div style="text-align: center;">
+                            <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" style="width: 24px; display: block; margin: 0 auto; opacity: 0.5;">
+                            <span style="font-size: 8px; color: #555;">reCAPTCHA</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Enviar</button>
+                </form>
+            </div>
+</div>
+            </div>
+</div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container mobile-center">
+            <p style="text-align:center; color: #fff;">&copy; 2025 Guia Tour Thermas Parks</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5517997858264" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+
+                        <script>
+                function sendToWhatsappNew(e, form) {
+                    e.preventDefault();
+                    const nome = form.nome.value;
+                    const email = form.email.value;
+                    const telefone = form.telefone.value;
+                    const cidade = form.cidade.value;
+                    const checkin = form.checkin.value;
+                    const checkout = form.checkout.value;
+                    const adultos = form.adultos.value;
+                    const criancas7_12 = form.criancas7_12.value;
+                    const criancas0_6 = form.criancas0_6.value;
+                    const pensao = form.pensao.value;
+                    
+                    // Contato Pref: only WhatsApp now
+                    let contatoPref = 'WhatsApp';
+                    const prefInput = form.querySelector('input[name="contato_pref"]:checked');
+                    if(prefInput) contatoPref = prefInput.value;
+                    
+                    const hotelName = document.title.split(" - ")[0];
+
+                    const formatDate = (dateStr) => {
+                        if(!dateStr) return "";
+                        const parts = dateStr.split("-");
+                        return `${parts[2]}/${parts[1]}/${parts[0]}`;
+                    };
+
+                    const checkinFormatted = formatDate(checkin);
+                    const checkoutFormatted = formatDate(checkout);
+
+                    const message = `Olá! Gostaria de um orçamento para *${hotelName}*.
+
+*Nome:* ${nome}
+*E-mail:* ${email}
+*Telefone:* ${telefone}
+*Cidade:* ${cidade}
+*Check-in:* ${checkinFormatted}
+*Check-out:* ${checkoutFormatted}
+*Adultos:* ${adultos}
+*Crianças (7-12):* ${criancas7_12}
+*Crianças (0-6):* ${criancas0_6}
+*Pensão:* ${pensao}
+*Preferência de contato:* ${contatoPref}`;
+
+                    const encodedMessage = encodeURIComponent(message);
+                    const url = `https://wa.me/5517997858264?text=${encodedMessage}`;
+                    window.open(url, "_blank");
+                }
+            </script>
+
+</body>
+
+</html>
+
+
+
