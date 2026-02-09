@@ -1,0 +1,608 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Tour Thermas Parks | Agência de Turismo</title>
+    <meta name="description"
+        content="Reserve sua hospedagem com desconto e evite filas nos melhores parques de Olímpia.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery6.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div id="top-bar">
+        <div class="container top-bar-content">
+            <div class="contact-info">
+                <span><i class="fab fa-whatsapp"></i> (17) 99785-8264 / (17) 99177-4141</span>
+            </div>
+            <div class="social-top">
+                <a href="https://www.instagram.com/guiatourhpthermasparks/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61585097969126&rdid=p0G0H5AIaPRvvF9w&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AKFtwibRp%2F#"
+                    target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#"
+                    style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit;">
+                    <!-- Using placeholder. Need to ask user for logo or use generic if unavailable, using generic for now -->
+                    <img src="assets/logo.jpg" alt="Guia Tour Thermas Parks Logo"> <span
+                        style="font-weight: bold; font-size: 0.9rem; text-transform: uppercase; color: #333;">GUIA TOUR
+                        THERMAS PARKS</span>
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#hospedagem">HOSPEDAGENS <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="#parques">INGRESSOS <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="#parques">PARQUES <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href="#" id="promo-link">EXCURSÕES</a></li>
+                    <li><a href="#footer">CONTATO</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="hero-slide active">
+                <div class="hero-image" style="background-image: url('assets/hero_bg.png');"></div>
+                <div class="hero-overlay"></div>
+                <div class="container hero-content text-left">
+                    <p class="hero-subtitle animate-up" style="color: #fff;">Guia Tour Thermas Parks Solicite Um
+                        Orçamento</p>
+                    <h1 class="animate-up delay-1">AS MELHORES OPÇÕES EM HOSPEDAGEM PARA A SUA FAMÍLIA</h1>
+                    <a href="#orcamento" class="btn btn-outline animate-up delay-2">ORÇAMENTO</a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+                <div class="hero-image" style="background-image: url('assets/resort_1.png');"></div>
+                <div class="hero-overlay"></div>
+                <div class="container hero-content text-left">
+                    <p class="hero-subtitle animate-up" style="color: #fff;">Seja Bem-Vindo Ao Nosso Site</p>
+                    <h1 class="animate-up delay-1">GUIA TOUR THERMAS PARKS - A SUA AGÊNCIA DE TURISMO</h1>
+                    <a href="#parques" class="btn btn-outline animate-up delay-2">VER PACOTES</a>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide">
+                <div class="hero-image" style="background-image: url('assets/park_1.png');"></div>
+                <div class="hero-overlay"></div>
+                <div class="container hero-content text-left">
+                    <p class="hero-subtitle animate-up" style="color: #fff;">Guia Tour Thermas Parks Pacotes
+                        Personalizados Para Sua
+                        Necessidade</p>
+                    <h1 class="animate-up delay-1">PACOTES EXCLUSIVOS</h1>
+                    <a href="#parques" class="btn btn-outline animate-up delay-2">VER PACOTES</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Navigation -->
+        <button class="carousel-btn prev-btn" id="hero-prev"><i class="fas fa-chevron-left"></i> ANTERIOR</button>
+        <button class="carousel-btn next-btn" id="hero-next">PRÓXIMA <i class="fas fa-chevron-right"></i></button>
+
+    </section>
+
+    <!-- Onde se Hospedar (Carousel) -->
+    <section id="hospedagem" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>ONDE SE HOSPEDAR</h2>
+                <div class="icon-divider">
+                    <i class="fas fa-users"></i>
+                </div>
+                <p>Temos as melhores opções em resort, hotéis e pousadas.</p>
+            </div>
+
+            <div class="carousel-wrapper">
+                <button class="park-nav park-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-container">
+
+                    <!-- Card 1: Resort -->
+                    <div class="carousel-slide">
+                        <h3 class="slide-category-title"
+                            style="color: #fff; text-align: center; margin-bottom: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
+                            RESORTS</h3>
+                        <div class="card resort-card">
+                            <div class="card-image">
+                                <img src="https://i.imgur.com/PRmBO3v.jpeg" alt="Hot Beach Celebration">
+                                <div class="card-overlay"></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <h3>Hot Beach Celebration</h3>
+                                <a href="resorts.html" class="btn btn-secondary">Ver detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Pousada -->
+                    <div class="carousel-slide">
+                        <h3 class="slide-category-title"
+                            style="color: #fff; text-align: center; margin-bottom: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
+                            POUSADAS</h3>
+                        <div class="card resort-card">
+                            <div class="card-image">
+                                <img src="assets/resort_1.png" alt="Pousada Recanto">
+                                <div class="card-overlay"></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i>
+                                </div>
+                                <h3>Pousada Recanto</h3>
+                                <a href="pousadas.html" class="btn btn-secondary">Ver detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Hotel -->
+                    <div class="carousel-slide">
+                        <h3 class="slide-category-title"
+                            style="color: #fff; text-align: center; margin-bottom: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
+                            HOTÉIS</h3>
+                        <div class="card resort-card">
+                            <div class="card-image">
+                                <img src="https://i.imgur.com/PDjA2qz.jpeg" alt="Tiffani Hotel">
+                                <div class="card-overlay"></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i>
+                                </div>
+                                <h3>Tiffani Hotel</h3>
+                                <a href="hoteis.html" class="btn btn-secondary">Ver detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Casa -->
+                    <div class="carousel-slide">
+                        <h3 class="slide-category-title"
+                            style="color: #fff; text-align: center; margin-bottom: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
+                            CASAS DE TEMPORADA</h3>
+                        <div class="card resort-card">
+                            <div class="card-image">
+                                <img src="assets/resort_1.png" alt="Casa Recanto Feliz">
+                                <div class="card-overlay"></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i>
+                                </div>
+                                <h3>Casa Recanto Feliz</h3>
+                                <a href="casas.html" class="btn btn-secondary">Ver detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <button class="park-nav park-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+    </section>
+
+    <!-- Parques (Gallery6 Style) -->
+    <section id="parques" class="gallery6-section bg-light">
+        <div class="container">
+            <div class="gallery6-header">
+                <div class="header-content">
+                    <h2>CONHEÇA OS PARQUES</h2>
+                    <a href="https://wa.me/5517997858264" target="_blank" class="book-demo-link">
+                        Solicitar Orçamento <i class="fas fa-arrow-up-right-from-square" style="font-size: 0.8em;"></i>
+                    </a>
+                </div>
+                <div class="header-actions">
+                    <button class="gallery-nav btn-outline-custom park-prev">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button class="gallery-nav btn-outline-custom park-next">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="carousel-wrapper">
+                <div class="carousel-container">
+                    <!-- Park 1 -->
+                    <div class="carousel-slide">
+                        <a href="thermas-dos-laranjais.html" class="gallery-card">
+                            <div class="image-wrapper">
+                                <div class="image-inner">
+                                    <img src="https://i.imgur.com/BwAAiFl.jpeg" alt="THERMAS DOS LARANJAIS">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">THERMAS DOS LARANJAIS</h3>
+                                <p class="card-summary">Um dos parques aquáticos mais visitados do mundo, com atrações
+                                    radicais e relaxantes para toda a família em águas termais.</p>
+                                <div class="read-more">
+                                    Saiba mais <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Park 2 -->
+                    <div class="carousel-slide">
+                        <a href="pit-stop-da-neve.html" class="gallery-card">
+                            <div class="image-wrapper">
+                                <div class="image-inner">
+                                    <img src="https://i.imgur.com/1p2axSS.jpeg" alt="Pit Stop da Neve">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Pit Stop da Neve</h3>
+                                <p class="card-summary">Uma experiência gelada e divertida no coração de Olímpia.
+                                    Brinque na neve e sinta o frio mesmo nos dias mais quentes.</p>
+                                <div class="read-more">
+                                    Saiba mais <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Park 3 -->
+                    <div class="carousel-slide">
+                        <a href="vale-dos-dinossauros.html" class="gallery-card">
+                            <div class="image-wrapper">
+                                <div class="image-inner">
+                                    <img src="https://i.imgur.com/lhKW4lh.jpeg" alt="Vale dos Dinossauros">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Vale dos Dinossauros</h3>
+                                <p class="card-summary">Viaje no tempo e encontre réplicas animatrônicas gigantes de
+                                    dinossauros que se movem e emitem sons em um cenário jurássico.</p>
+                                <div class="read-more">
+                                    Saiba mais <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Park 4 -->
+                    <div class="carousel-slide">
+                        <a href="orion-verso.html" class="gallery-card">
+                            <div class="image-wrapper">
+                                <div class="image-inner">
+                                    <img src="https://i.imgur.com/Y3ue2g3.jpeg" alt="OrionVerso">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">OrionVerso</h3>
+                                <p class="card-summary">O primeiro parque de realidade virtual de Olímpia. Mergulhe em
+                                    mundos digitais incríveis com tecnologia de ponta.</p>
+                                <div class="read-more">
+                                    Saiba mais <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Park 5 -->
+                    <div class="carousel-slide">
+                        <a href="hot-beach.html" class="gallery-card">
+                            <div class="image-wrapper">
+                                <div class="image-inner">
+                                    <img src="https://i.imgur.com/TrviRCu.jpeg" alt="Hot Beach">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Hot Beach</h3>
+                                <p class="card-summary">Um parque aquático moderno com praia artificial, areia
+                                    branquinha, ondas e muito conforto, integrado a resorts de alto padrão.</p>
+                                <div class="read-more">
+                                    Saiba mais <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Park 6 -->
+                    <div class="carousel-slide">
+                        <a href="dreamland-ice-bar.html" class="gallery-card">
+                            <div class="image-wrapper">
+                                <div class="image-inner">
+                                    <img src="https://i.imgur.com/Y1aPbTI.jpeg" alt="Dreamland Ice Bar">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Dreamland Ice Bar</h3>
+                                <p class="card-summary">O maior bar de gelo do Brasil! Esculturas de gelo, música e
+                                    drinks especiais em uma temperatura congelante de até -10°C.</p>
+                                <div class="read-more">
+                                    Saiba mais <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Park 7 -->
+                    <div class="carousel-slide">
+                        <a href="dreamland-museu-de-cera.html" class="gallery-card">
+                            <div class="image-wrapper">
+                                <div class="image-inner">
+                                    <img src="https://i.imgur.com/LQvMqSs.jpeg" alt="Dreamland Museu de Cera">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Dreamland Museu de Cera</h3>
+                                <p class="card-summary">Fique cara a cara com seus ídolos! Mais de 30 cenários e 70
+                                    personagens em tamanho real, de estrelas do cinema a ícones do esporte.</p>
+                                <div class="read-more">
+                                    Saiba mais <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Promo Modal (Hidden by Default) -->
+    <div id="promoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="booking-form-wrapper"
+                style="max-width: 600px; margin: 0 auto; background-color: #333; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                <div class="form-header"
+                    style="background-color: #2c5282; color: white; padding: 20px; text-align: center; font-weight: 700; font-size: 1.4rem; margin: -30px -30px 20px -30px; border-radius: 8px 8px 0 0; border-bottom: 2px solid #ed8936;">
+                    Para conhecer as excursões, preencha o formulário
+                </div>
+                <form onsubmit="sendToWhatsappNew(event, this)">
+                    <input type="hidden" name="hotel_name" value="">
+
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label
+                            style="display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9rem; color: #fff;">Nome:</label>
+                        <input type="text" name="nome" class="form-control" placeholder="Nome" required
+                            style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 5px; font-family: inherit; box-sizing: border-box;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label
+                            style="display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9rem; color: #fff;">E-mail:</label>
+                        <input type="email" name="email" class="form-control" placeholder="E-mail"
+                            style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 5px; font-family: inherit; box-sizing: border-box;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label
+                            style="display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9rem; color: #fff;">Telefone:</label>
+                        <input type="tel" name="telefone" class="form-control" placeholder="Telefone" required
+                            style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 5px; font-family: inherit; box-sizing: border-box;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label
+                            style="display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9rem; color: #fff;">Cidade:</label>
+                        <input type="text" name="cidade" class="form-control" placeholder="Cidade"
+                            style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 5px; font-family: inherit; box-sizing: border-box;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label
+                            style="display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9rem; color: #fff;">Data
+                            de Chegada:</label>
+                        <input type="date" name="checkin" class="form-control" required
+                            style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 5px; font-family: inherit; box-sizing: border-box;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label
+                            style="display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9rem; color: #fff;">Data
+                            de Saída:</label>
+                        <input type="date" name="checkout" class="form-control" required
+                            style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 5px; font-family: inherit; box-sizing: border-box;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label
+                            style="display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9rem; color: #fff;">Adultos:</label>
+                        <input type="number" name="adultos" class="form-control" placeholder="2" min="1" value="2"
+                            required
+                            style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 5px; font-family: inherit; box-sizing: border-box;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label
+                            style="display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9rem; color: #fff;">Crianças
+                            (7 a 12 anos):</label>
+                        <input type="number" name="criancas7_12" class="form-control" placeholder="0" min="0" value="0"
+                            style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 5px; font-family: inherit; box-sizing: border-box;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label
+                            style="display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9rem; color: #fff;">Crianças
+                            (0 a 6 anos):</label>
+                        <input type="number" name="criancas0_6" class="form-control" placeholder="0" min="0" value="0"
+                            style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 5px; font-family: inherit; box-sizing: border-box;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label
+                            style="display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9rem; color: #fff;">Pensão:</label>
+                        <select name="pensao" class="form-control"
+                            style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 5px; font-family: inherit; box-sizing: border-box;">
+                            <option value="Somente Café" selected>Somente Café</option>
+                            <option value="Café da Manhã">Café da Manhã</option>
+                            <option value="Meia Pensão">Meia Pensão</option>
+                            <option value="Pensão Completa">Pensão Completa</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label
+                            style="display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9rem; color: #fff;">Como
+                            prefiro ser contactado?</label>
+                        <div class="radio-group"
+                            style="display: flex; flex-direction: column; gap: 5px; font-size: 0.9rem; color: #fff;">
+                            <label
+                                style="display: flex; align-items: center; gap: 8px; font-weight: normal; cursor: pointer;"><input
+                                    type="radio" name="contato_pref" value="WhatsApp" checked> WhatsApp</label>
+                        </div>
+                    </div>
+
+                    <!-- Fake ReCaptcha -->
+                    <div
+                        style="background: #f9f9f9; border: 1px solid #d3d3d3; padding: 5px 10px; border-radius: 3px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; width: 100%; max-width: 250px; color: #000;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <input type="checkbox" style="width: 24px; height: 24px; cursor: pointer;">
+                            <span style="font-size: 14px; font-weight: 500;">I'm not a robot</span>
+                        </div>
+                        <div style="text-align: center;">
+                            <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
+                                style="width: 24px; display: block; margin: 0 auto; opacity: 0.5;">
+                            <span style="font-size: 8px; color: #555;">reCAPTCHA</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn"
+                        style="width: 100%; background-color: #ed8936; color: white; border: none; padding: 12px; font-weight: bold; cursor: pointer; border-radius: 4px; margin-top: 10px; text-transform: uppercase; font-size: 1rem; transition: background 0.3s;">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container footer-grid">
+            <!-- Atendimento -->
+            <div class="footer-col footer-col-center">
+                <h3>Atendimento</h3>
+                <div class="contact-block">
+                    <h4>CENTRAL DE RESERVAS</h4>
+                    <p><i class="fab fa-whatsapp"></i> (17) 99785-8264 / (17) 99177-4141</p>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com/guiatourhpthermasparks/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/5517997858264" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:Contato.guiatour.thermasparks@hotmail.com"><i class="far fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/share/1AKFtwibRp/" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                </div>
+
+                <div class="logo-footer">
+                    <img src="assets/logo.jpg" alt="Footer Logo">
+                </div>
+                <p style="text-align: center; margin-top: 10px;">Guia Tour Thermas Parks</p>
+            </div>
+
+            <!-- Links -->
+            <div class="footer-col middle-col">
+                <div class="footer-links-list">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="#hospedagem">HOSPEDAGENS</a></li>
+                        <li><a href="#parques">INGRESSOS</a></li>
+                        <li><a href="#parques">PARQUES</a></li>
+                        <li><a href="#">EXCURSÕES</a></li>
+                        <li><a href="#footer">CONTATO</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hospedagens Links -->
+            <div class="footer-col">
+                <div class="footer-links-list">
+                    <h3>Hospedagens</h3>
+                    <ul>
+                        <li><a href="resorts.html">Resort</a></li>
+                        <li><a href="hoteis.html">Hotéis</a></li>
+                        <li><a href="pousadas.html">Pousadas</a></li>
+                        <li><a href="casas.html">Casa para temporada</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Ingressos Links -->
+            <div class="footer-col">
+                <div class="footer-links-list">
+                    <h3>Ingressos</h3>
+                    <ul>
+                        <li><a href="thermas-dos-laranjais.html">Thermas dos laranjais</a></li>
+                        <li><a href="hot-beach.html">Hot Beach park</a></li>
+                        <li><a href="vale-dos-dinossauros.html">Vale dos dinossauros</a></li>
+                        <li><a href="dreamland-museu-de-cera.html">Museu de cera</a></li>
+                        <li><a href="dreamland-ice-bar.html">Ice bar</a></li>
+                        <li><a href="orion-verso.html">Orion verso</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Onde Estamos -->
+            <div class="footer-col">
+                <h3>Onde Estamos</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Rua treze de maio, 187<br>Olímpia SP</p>
+                <p class="email-link"><i class="far fa-envelope"></i> Contato.guiatour.thermasparks@hotmail.com</p>
+                <p class="policy-link"><i class="fas fa-eye"></i> Política de Dados</p>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Rua+treze+de+maio,187,Olimpia,SP&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Utilities -->
+    <a href="https://wa.me/5517997858264" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="#header" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
