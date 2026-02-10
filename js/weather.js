@@ -11,24 +11,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 const code = data.current_weather.weathercode;
                 let iconClass = 'fa-sun';
 
-                // WMO Weather interpretation codes (https://open-meteo.com/en/docs)
-                if (code === 0) iconClass = 'fa-sun';
-                else if ([1, 2, 3].includes(code)) iconClass = 'fa-cloud-sun';
-                else if ([45, 48].includes(code)) iconClass = 'fa-smog';
-                else if ([51, 53, 55, 61, 63, 65, 80, 81, 82].includes(code)) iconClass = 'fa-cloud-rain';
-                else if ([71, 73, 75, 77, 85, 86].includes(code)) iconClass = 'fa-snowflake';
-                else if ([95, 96, 99].includes(code)) iconClass = 'fa-bolt';
+                // Update: Widget is now just a static link, but we can still use the API to maybe show a tooltip or just keep the link static as requested.
+                // The user requested: "AO invés do ícone, crie uma frase... e redirecione... para a previsão... no google"
 
-                weatherWidget.innerHTML = `<i class="fas ${iconClass}"></i> ${temp}°C`;
+                // We will just change the inner HTML to text. We don't necessarily need the API anymore if it's just a static link text, 
+                // BUT it might be nice to keep the temp in the title/tooltip or just remove the API call if truly not needed.
+                // However, the prompt implies replacing the icon visualization with the phrase.
+
+                // Let's keep the API fetch to show the temperature in the tooltip (title attribute), but change the display to text.
+
+                weatherWidget.innerHTML = `Veja o clima aqui`;
+                weatherWidget.title = `Agora faz ${temp}°C em Olímpia, SP`;
                 weatherWidget.style.display = 'flex';
-                weatherWidget.title = "Clima atual em Olímpia, SP";
+                weatherWidget.href = "https://www.google.com/search?q=previs%C3%A3o+do+tempo+ol%C3%ADmpia+sp";
             })
             .catch(err => {
                 console.error('Weather fetch error:', err);
-                // Hide only if we never got data, otherwise keep old data
-                if (weatherWidget.innerHTML === '<i class="fas fa-spinner fa-spin"></i>') {
-                    weatherWidget.style.display = 'none';
-                }
+                // Even if fetch fails, show the static link
+                weatherWidget.innerHTML = `Veja o clima aqui`;
+                weatherWidget.style.display = 'flex';
+                weatherWidget.href = "https://www.google.com/search?q=previs%C3%A3o+do+tempo+ol%C3%ADmpia+sp";
             });
     }
 
