@@ -1725,25 +1725,31 @@ img {
     gap: 8px;
     font-size: 0.9rem;
     font-weight: 600;
-    color: var(--secondary-color);
-    background: rgba(27, 59, 111, 0.1);
-    padding: 5px 12px;
-    border-radius: 20px;
+    color: var(--white);
+    background: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 25px;
     margin-left: 10px;
     transition: all 0.3s ease;
     cursor: pointer;
+    box-shadow: 0 4px 10px rgba(245, 134, 52, 0.4);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    text-decoration: none;
 }
 
 .weather-widget:hover {
-    background: var(--secondary-color);
+    background: var(--primary-hover);
     color: var(--white);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(27, 59, 111, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(245, 134, 52, 0.6);
 }
 
 .weather-widget i {
-    font-size: 1.1rem;
-    color: #F58634;
+    font-size: 1rem;
+    color: var(--white);
+    margin-right: 5px;
 }
 
 .weather-widget:hover i {
